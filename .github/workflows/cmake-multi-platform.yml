@@ -69,6 +69,7 @@ jobs:
         -S ${{ github.workspace }}
         -DFORTE_ARCHITECTURE=${{ matrix.architecture }}
         -DFORTE_COM_ETH=ON
+        -DFORTE_TESTS=ON
 
     - name: Build
       # Build your program with the given configuration. Note that --config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
